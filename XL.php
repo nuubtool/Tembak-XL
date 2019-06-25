@@ -1,5 +1,6 @@
 <?php
 $ch = curl_init();
+$imei = "";
 $msisdn = "";//no telp
 $sessionid = ""; //session id
 $serviceid = ""; //service id
@@ -28,7 +29,7 @@ $bod = array(
      "Grace_End"=>"20190715",
      "Rembal"=>"0",
      "IMSI"=>"510110032177230",
-     "IMEI"=>"3571250436519001",
+     "IMEI"=>"$imei",
      "Shortcode"=>"mapps"],
     "Header"=>[
      "IMEI"=>1588165533,
