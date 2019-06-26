@@ -1,7 +1,7 @@
 <?php
 function getnumber(){
 	echo "awalan harus menggunakan 62\n";
-	echo "Example : 628195328718\n";
+	echo "Example : 6287765200200\n";
 	echo "msisdn : ";
 	$msisdn = trim(fgets(STDIN));
 	return $msisdn;
@@ -13,7 +13,7 @@ function getotp(){
 }
 
 function getserviceid(){
-	echo "DAFTAR PAKET\n";
+	echo "MENU PAKET\n";
 	$list=array(
 		'1 waze and chat 1hr',
   		'2 waze and chat 3hr',
@@ -281,7 +281,7 @@ for ($o = 1; $o > 0; $o++){
 		echo "\njika paket tidak masuk silahkan ketik 3 di menu pilihan\n";
 		break;
 	case '4':
-		exit('terimakasih sudah menggunakan tools ini');
+		exit('terimakasih sudah menggunakan tools kami');
 		break;
 	}
 }
