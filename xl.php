@@ -79,10 +79,10 @@ function getserviceid(){
 			$serviceid = 8211379;
 			break;
 		case '13' :
-			$serviceid = 8211380;
+			$serviceid = 8211381;
 			break;
 		case '14' :
-			$serviceid = 8211381;
+			$serviceid = 8211380;
 			break;
 		case '15' :
 			$serviceid = 8211382;
@@ -100,10 +100,10 @@ function getserviceid(){
 			$serviceid = 8211386;
 			break;
 		case '20' :
-			$serviceid = 8211387;
+			$serviceid = 8211388;
 			break;
 		case '21' :
-			$serviceid = 8211388;
+			$serviceid = 8211387;
 			break;
 		case '22' :
 			$serviceid = 8211389;
