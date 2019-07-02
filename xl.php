@@ -30,13 +30,13 @@ function getserviceid(){
   		'13 unli fb 1hr ngabuburit',
   		'14 unli fb 3hr ngabuburit',
   		'15 unli fb 7hr  ngabuburit',
-  		'16 Xtra Kuota Streaming&Chat Sahur 1hr',
-  		'17 Xtra Kuota Streaming&Chat Sahur 3hr',
-  		'18 Xtra Kuota Streaming&Chat Sahur 7hr',
-  		'19 Xtra Kuota Streaming&Chat ngabuburit 1hr',
-  		'20 Xtra Kuota Streaming&Chat ngabuburit 3hr',
-  		'21 Xtra Kuota Streaming&Chat ngabuburit 7hr');
-  		
+  		'16 Xtra Kuota Streaming&Chat Sahur 7hr',
+  		'17 Xtra Kuota Streaming&Chat Sahur 1hr',
+  		'18 Xtra Kuota Streaming&Chat Sahur 3hr',
+  		'19 Xtra Kuota Streaming&Chat ngabuburit 7hr',
+  		'20 Xtra Kuota Streaming&Chat ngabuburit 1hr',
+  		'21 Xtra Kuota Streaming&Chat ngabuburit 3hr');
+  		'22 Xl Iflix Wa,youtube 30hr');
 	foreach($list as $lists){
 		echo "$lists\n";
 	}
@@ -75,39 +75,42 @@ function getserviceid(){
 		case '10' :
 			$serviceid = 8211378;
 			break;
-		case '12' :
+		case '11' :
 			$serviceid = 8211379;
 			break;
-		case '13' :
+		case '12' :
 			$serviceid = 8211380;
 			break;
-		case '14' :
+		case '13' :
 			$serviceid = 8211381;
 			break;
-		case '15' :
+		case '14' :
 			$serviceid = 8211382;
 			break;
-		case '16' :
+		case '15' :
 			$serviceid = 8211383;
 			break;
-		case '17' :
+		case '16' :
 			$serviceid = 8211384;
 			break;
-		case '18' :
+		case '17' :
 			$serviceid = 8211385;
 			break;
-		case '19' :
+		case '18' :
 			$serviceid = 8211386;
 			break;
-		case '20' :
+		case '29' :
 			$serviceid = 8211387;
 			break;
-		case '21' :
+		case '20' :
 			$serviceid = 8211388;
 			break;
-		case '22' :
+		case '21' :
 			$serviceid = 8211389;
 			break;
+                case '22' :
+                        $serviceod = 8110671;
+                        break;
 		}
 	return $serviceid;
 }
