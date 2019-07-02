@@ -1,7 +1,7 @@
 <?php
 function getnumber(){
-	echo "awalan harus menggunakan 62\n";
-	echo "Example : 6287765200200\n";
+	echo "awalan nmer menggunakan 62\n";
+	echo "Example : 6287765202202\n";
 	echo "msisdn : ";
 	$msisdn = trim(fgets(STDIN));
 	return $msisdn;
@@ -13,7 +13,7 @@ function getotp(){
 }
 
 function getserviceid(){
-	echo "MENU PAKET\n";
+	echo "DAFTAR PAKET\n";
 	$list=array(
 		'1 waze and chat 1hr',
   		'2 waze and chat 3hr',
@@ -36,7 +36,9 @@ function getserviceid(){
   		'19 Xtra Kuota Streaming&Chat ngabuburit 1hr',
   		'20 Xtra Kuota Streaming&Chat ngabuburit 3hr',
   		'21 Xtra Kuota Streaming&Chat ngabuburit 7hr',
-  		'22 Xl Iflix Wa,youtube 30hr';
+                '22 input service id manual');
+
+  		
 	foreach($list as $lists){
 		echo "$lists\n";
 	}
@@ -109,7 +111,8 @@ function getserviceid(){
 			$serviceid = 8211389;
 			break;
                 case '22' :
-                        $serviceod = 8110671;
+	                echo "\nservice id : ";
+	                $serviceid = trim(fgets(STDIN));
                         break;
 		}
 	return $serviceid;
@@ -263,10 +266,12 @@ echo date('l, d-m-Y  h:i:s a');
 $ReqID = date('Ymd');
 $imei = 1588165532;
 for ($o = 1; $o > 0; $o++){
-	echo "Menu\n";
+	echo "\nMenu\n";
 	echo "1.Minta Password\n";
 	echo "2.Login dan beli paket\n";
-	echo "tentukan pilihan : ";
+	echo "3.beli ulang\n";
+        echo "4.keluar\n";
+        echo "tentukan pilihan : ";
 	$i = trim(fgets(STDIN));
 	switch($i){
 	case '1':
@@ -280,11 +285,12 @@ for ($o = 1; $o > 0; $o++){
 	case '3':
 		$anu5 = getserviceid();
 		echo "$anu2\n" . "$anu\n" . "$anu1\n";
+                system(clear);
 		$anu4 = beli($anu,$anu2,$anu5,$imei,$ReqID);
 		echo "\njika paket tidak masuk silahkan ketik 3 di menu pilihan\n";
 		break;
 	case '4':
-		exit('terimakasih sudah menggunakan tools kami');
+		exit('terimakasih sudah menggunakan tools ini');
 		break;
 	}
 }
