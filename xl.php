@@ -35,7 +35,7 @@ function getserviceid(){
   		'18 Xtra Kuota Streaming&Chat Sahur 7hr',
   		'19 Xtra Kuota Streaming&Chat ngabuburit 1hr',
   		'20 Xtra Kuota Streaming&Chat ngabuburit 3hr',
-  		'21 Xtra Kuota Streaming&Chat ngabuburit 7hr';
+  		'21 Xtra Kuota Streaming&Chat ngabuburit 7hr',
   		'22 Xl Iflix Wa,youtube 30hr';
 	foreach($list as $lists){
 		echo "$lists\n";
